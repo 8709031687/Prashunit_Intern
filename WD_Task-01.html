@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Navigation Menu</title>
+    <!-- <link rel="stylesheet" href="styles.css"> -->
+<style>
+       
+    *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Poppins', sans-serif;
+}
+.logo{
+    width: 50px;
+    height: 50px;
+    /* margin: 0px 0px 0px 40px; */
+    float: left;
+    color: rgb(235, 95, 61);
+    font-weight: bold;
+    font-size: 25px;
+}
+#logo{
+    width: 25px;
+    height: 30px;
+    margin: 5px 5px 5px 40px;
+    float: left;
+    
+}
+.nav {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color:rgb(0,46 ,95);
+    padding: 15px 10px;
+    text-align: center;
+    z-index: 100;
+    height: 10%;
+}
+.nav a {
+    color: rgb(245, 238, 238);
+    text-decoration: none;
+    padding: 5px 15px;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+    font-size: 20px;
+}
+
+.nav a:hover {
+    color: #007bff;
+    text-decoration: underline;
+}
+.content {
+    margin-top: 0px;
+    /* background: url('./pictures/photo.avif'); */
+    background-repeat: no-repeat;
+    background-position:  center;
+    block-size: cover;  
+}
+.content img {
+     width: 1200px;
+      height: 800px; 
+}
+</style>
+</head>
+
+<body>
+    <div class="nav" id="nav">
+        <p><img src="./pictures/prasunet_company_logo.jpg" id="logo"></p>
+         <p class="logo">PrasuNet</p>
+         <a href="#" class="active">Home</a>
+         <a href="#">Services</a>
+         <a href="#">Intership</a>
+         <a href="#">Register</a>
+         <a href="#">Career</a>
+         <a href="#">Contact</a>
+        <a href="#">About</a>
+    </div>
+
+    <div class="content">
+       <img src="./pictures/prasunit.jpg">
+</div>
+
+<script>
+        indow.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+    if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
+        document.getElementById("nav").style.padding = "10px 0";
+        document.getElementById("nav").style.backgroundColor = "#06085c";
+    } else {
+        document.getElementById("nav").style.padding = "15px 0";
+        document.getElementById("nav").style.backgroundColor = "#00001D";
+    }
+}
+</script>
+</body>
+</html>

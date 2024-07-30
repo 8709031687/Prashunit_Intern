@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio Website</title>
+    <link rel="stylesheet" href="Portfolio.css">
+    <script src="https://kit.fontawesome.com/e95bb00551.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="header">
+  
+    <div class="container">
+        <nav>
+            <img src="pictures/logo.png" class="logo" >
+            <ul id="sidemenu">
+                <li><a href="#header">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+            </ul>
+            <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+        </nav>
+    </div>
+</div>
+
+<!-- ---------------hero-section------------------- -->
+
+<div class="hero-section">
+    <div class="row-1">
+    <div class="content-left">
+        <div class="header-text">
+            <p>Web Developer</p>
+            <h1>Hi, I'm <span> Sonam </span> <br> From India</h1>
+        </div>
+    </div>
+<div class="content-right">
+    <div class="image-section">
+        <img src="pictures/img1.png" class="img">
+       </div> 
+</div>
+</div>
+</div>
+
+<!-- About -->
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="pictures/pi1.jpg">
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title">About Me</h1>
+                <p class="sub-title-p">I am Sonam, currently pursuing an M.C.A. from Harcourt Butler Technical University,
+                                        and I'm also a Class Representative of our branch.
+                                        I'm a creative problem solver who enjoys thinking outside the box. 
+                                        As a computer science student, I have honed my skills in Java programming, algorithms, and data structures and I'm also passionate about web development.
+                                        In my free time, I love exploring new coding challenges and staying up to date with industry trends." </p>
+            
+            <div class="tab-title">
+                <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                <p class="tab-links" onclick="opentab('project')">Project</p>
+                <p class="tab-links" onclick="opentab('education')">Education</p>
+            </div>
+
+            <div class="tab-contains active-tab" id="skills">
+                <ul>
+                    <li>Core Java</li>
+                    <li>Data Structure</li>
+                    <li>Database Managment System</li>
+                    <li>Operating System</li>
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>JavaScript</li>
+                </ul>
+            </div>
+            <div class="tab-contains" id="project">
+                <ul>
+                    <li><span>Amazon Webpage Clone</span><br>Create Clone by using HTML and CSS</li>
+                    <li><span>StudySync_project</span><br>Create by using HTML and CSS</li>
+                    <li><span>University Data Processing System</span><br>Create by using HTML, CSS, JavaScript, PHP, and MySql</li>                    
+                </ul>
+            </div>
+            <div class="tab-contains" id="education">
+                <ul>
+                    <li><span>2023-2025</span><br>M.C.A. form HBTU, kanpur, UP</li>
+                    <li><span>2020</span><br> B.C.A. form J.P. University, Chapra, Bihar </li>                   
+                </ul>
+            </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Skills -->
+
+<div id="services">
+    <div class="container">
+        <h1 class="sub-title"> My Skills </h1>
+        <div class="services-list">
+            <div>
+                <i class="fa-solid fa-code"></i>
+                <h2>Web Design</h2>
+                <p>I specialize in creating visually appealing and user-friendly websites. 
+                    From planning to execution, I ensure your site represents your brand and engages visitors effectively.</p>
+                <a href="#">Learn more</a>
+            </div>
+            <div>
+                <!-- <i class="fa-solid fa-crop"></i> -->
+                <i class="fa-solid fa-table"></i>
+                <h2>Data Structure</h2>
+                <p>Understanding data structures is essential for efficient programming. 
+                    I’ll guide you through algorithms, best practices, and code optimization.</p>
+                <a href="#">Learn more</a>
+            </div>
+            <div>
+                <i class="fa-solid fa-database"></i>
+                <h2>Full Stack Developer</h2>
+                <p>As a full stack developer, I handle both front-end (what users see) and back-end (server-side) development. 
+                    Whether it’s web apps or APIs, I’ve got you covered.</p>
+                <a href="#">Learn more</a>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+<!-- Portfolio -->
+ <div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title">My Work</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="pictures/Aza-clone.png">
+                <div class="layar">
+                    <h3>Amazon Clone</h3>
+                    <p>I designed an Amazon’s clone and user-friendly layout. 
+                        While this clone doesn’t have real product listings or backend functionality, it showcases my front-end skills.</p>
+                    <a href="#"><i class="fa-sharp fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="pictures/Study_sync.png">
+                <div class="layar">
+                <h3>Study_Sync Project</h3>
+                <p>The StudySync webpage is a personal project I developed using HTML and CSS. 
+                    It serves as a platform for educational content, study resources, and collaborative learning.</p>
+                <a href="#"><i class="fa-sharp fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="pictures/TikTakToe.png">
+                <div class="layar">
+                <h3>Tik-Tak-Toe Game</h3>
+                <p>This is a simple Tic-Tac-Toe game created using HTML, CSS, and JavaScript.
+                   It allows two players (X and O) to take turns and compete for victory on a 3x3 grid.</p>
+                <a href="#"><i class="fa-sharp fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+        </div>
+        <a href="#" class="btn">See more</a>
+    </div>
+ </div>
+
+ <!-- --------------Contact............... -->
+
+ <div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fa-sharp fa-solid fa-paper-plane"></i>raisonam1995@gmail.com</p>
+                <p><i class="fa-solid fa-square-phone"></i>8709031687</p>
+                <div class="social-icons">
+                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://www.linkedin.com/in/sonam-251248198/"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="https://github.com/dashboard"><i class="fa-brands fa-github"></i></a>
+                    <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                </div>
+                <a href="pictures/Sonam Resume.pdf" download class="btn btn2">Download Resume</a>
+            </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="Email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                    <span id="msg"></span>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>Copyright <i class="fa-regular fa-copyright" id="copyright-sign"></i> <span id="i">Sonam</span> - All rights reserved </p>
+    </div>
+ </div>
+
+
+
+<script>
+
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontaints = document.getElementsByClassName("tab-contains");
+
+ function opentab(tabname){
+    for(tablink of tablinks){
+        tablink.classList.remove("active-link");
+    }
+    for(tabcontaint of tabcontaints){
+        tabcontaint.classList.remove("active-tab");
+    }
+    event.currentTarget.classList.add("active-link");
+    document.getElementById(tabname).classList.add("active-tab");
+}
+</script>
+<script>
+    var sidemenu = document.getElementById("sidemenu");
+
+    function openmenu(){
+        sidemenu.style.right = "0";
+    }
+    function closemenu(){
+        sidemenu.style.right = "-200px";
+    }
+</script>
+
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbwk9e78CVqoUuiyai8_DDSntDtk7AxzuYkIHx4wNR_Dvjrv7q-5kIREGzI6atP9WXBN/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg = document.getAnimationById("msg")
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            msg.innerHTML = "Message sent successfully"
+            setTimeout(function() {
+                msg.innerHTML  = ""
+            }, 2000)
+            form.reset()
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+    
+</body>
+</html>
